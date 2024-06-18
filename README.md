@@ -1,2 +1,2 @@
-# frequencyAnalysis
+# FrequencyAnalysis
 Frequency Analysis 
