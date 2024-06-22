@@ -16,5 +16,15 @@ for Letter in message.upper():
   
 def getItemAtIndexZero(items):
     return items[0]
-def 
+  #the next function returns a alphabet of letters arranged in order of most frequentlyh occuring in the message parametter
+
+def getOrder(message):
+  letterToFreq = getLetterCount(message)
+  freqToLetter={}
+  for letter in LETTERS:
+    if letterToFreq[letter] not in freqToLetter:
+      freqToLetter[letterToFreq[letter]] = [letter]
+    else:
+      freqToLetter[letterToFreq[letter]].append(letter)
+
     
