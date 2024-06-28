@@ -17,7 +17,7 @@ for Letter in message.upper():
 def getItemAtIndexZero(items):
     return items[0]
   
-  #the next function returns a alphabet of letters arranged in order of most frequentlyh occuring in the message parametter
+  #the next function returns a alphabet of letters arranged in order of most frequently occuring in the message parametter
 def getFreqOrder(message):
   letterToFreq = getLetterCount(message)
   freqToLetter={}
@@ -29,5 +29,9 @@ def getFreqOrder(message):
   for freq in freqToLetter:
     freqToLetter[freq].sort(key=ETAOIN.find, reverse=true)
     freqToLetter[freq]= '' join(freqToLetter[freq])
+    
+  #converting the dictionary to a list of tuple pairs and sorting them
+  freqPairs= list(freqToLetter.items())
+  freqPairs.sort(key=getItemAtIndexZero, reverse=True)
 
     
