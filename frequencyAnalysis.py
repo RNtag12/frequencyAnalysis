@@ -34,4 +34,11 @@ def getFreqOrder(message):
   freqPairs= list(freqToLetter.items())
   freqPairs.sort(key=getItemAtIndexZero, reverse=True)
 
+#extracting all the letters for the final string:
+freOrder = []
+for freqPair in freqPairs:
+  freqOrder.append(freqPair[1])
+
+return ''.join(freqOrder)
+
     
