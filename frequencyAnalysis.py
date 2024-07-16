@@ -41,6 +41,8 @@ def getFreqOrder(message):
 
   return ''.join(freqOrder)
 
+#this next part is to compare the letter frequency of our ordered dictionary to known letter frequencies in the plaintext language
+
 def englishfreqMatchScore(message):
   freqOrder= getFrequencyOrder(message)
 
