@@ -44,3 +44,8 @@ def getFreqOrder(message):
 def englishfreqMatchScore(message):
   freqOrder= getFrequencyOrder(message)
 
+matchScore = 0
+for commonLetter in ETAOIN[:6]:
+  if commonLetter in freqOrder[:6]:
+    matchScore += 1
+
